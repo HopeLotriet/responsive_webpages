@@ -1,11 +1,11 @@
 {
     "user" : {
         "fullName": "Musawenkosi H.L Nyathi",
-        "photo" : "Musa.png"
+        "photo" : "./Musa.png"
     },
     "city" : {
         "name" : "Venice",
-        "photo" : "Venice.png",
+        "photo" : "./Venice.png",
         "description" : "It is a city in Italy and I would like to visit Venice as it seems like a peaceful place to be. It is arguable one of Italy's most picturesque cities. With its widing canals, striking architecture, and beautiful bridges. It has no roads, just canals. It is known as the 'Floating City' The population of Venice has decreased from 120 000 to 60 000 in the last 50 years. Some experts believe Venice could be a ghost town by 2030 with only tourists visiting by day."
     },
     "foreignLanguage" : {
@@ -27,17 +27,17 @@
         {
             "name" : "Chemistry",
             "description" : "Study of the properties and behaviour of matter.",
-            "photo" : "Chemistry.png"
+            "photo" : "./Chemistry.png"
         },
         {
             "name" : "Botany",
             "description" : "Study of how plants produce food, how they function and what they look like.",
-            "photo" : "Botany.png"
+            "photo" : "./Botany.png"
         },
         {
             "name" : "Mathematics",
             "description" : "Area of knowledge that includes the topics of numbers, formulas and related structures.",
-            "photo" : "Maths.png"
+            "photo" : "./Maths.png"
         }
     ]
 }
