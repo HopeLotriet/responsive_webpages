@@ -79,14 +79,15 @@
     <section class="subjects">
         <h4><strong>Favourite Subjects</strong></h4> <br>
         
-                {{# each favouriteSubjects}}
+               
                 
                 <div class="row">
-                   
-                    <div class="col-sm-4"> <strong>{{name}}</strong></div>
-                    <div class="col-6 col-md-5 col-s-12">{{description}}</div>
-                    <div class="col-6 col-md-5 col-s-12"><img src="{{photo}}" class="rounded border border-warning" width="200"></div>
-               
+                    {{# each favouriteSubjects}}
+                    <div class="col"> 
+                    <h6><strong>{{name}}</strong></h6>
+                    <p>{{description}}</p>
+                    <img src="{{photo}}" class="rounded border border-warning" width="200">
+               </div>
                 {{/each}}
              
         </div>
