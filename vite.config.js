@@ -6,13 +6,13 @@ import data from './data.json';
 
 
 export default defineConfig({
-    base : '/responsive_webpages/',
+    // base : '/responsive_webpages/',
     build: {
       rollupOptions: {
         input : {
           main: 'index.html',
-          sub1: 'index-bootstrap.html',
-          sub2: 'index-materialize.html',
+          bootstrap: 'index-bootstrap.html',
+          materialize: 'index-materialize.html',
         }
       }
     },
