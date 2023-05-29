@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="card-panel grey lighten-1">
+        <section class="heading center-align"><h2><u>Personal Webpage</u></h2></section>
+        
+        <section class="intro"> 
+        <h2><strong><u>Intro</u></strong></h2>
+        <br>
+        <div class="row">
+            <div class="col s12 m6 l3"><h3><strong>{{user.fullName}}</strong></h3></div> 
+            <div class="col s12 m6 l3"><img src={{user.photo}} class="rounded border border-warning" width="200" alt="Musawenkosi"></div>
+    </div>
+        
+        
+        <br>
+    </section>
+           
+    <section class="city">
+        <h2><strong><u>Which City?</u></strong></h2>
+        <div><h3><strong>{{city.name}}</strong></h3></div>
+       
+        <div class="row">
+            
+            <div class="col s12 m6 l3"><img src="{{city.photo}}" class="rounded border border-warning" alt="canal in venice"></div>
+            <div class="col s12 m6 l3">{{city.description}}</div>
+    </div>
+        
+        <br>
+    
+    </section>
+    
+    
+    <section class="language"> 
+        <h2><strong><u>A Foreign Language</u></strong></h2>
+        <h3><strong>{{foreignLanguage.language}}</strong></h3>
+        <br>
+        <p>It is among the world's top five spoken languages, and it is the official language in four continents. I just started learning it and I find it easy to learn and so far, it is <a href="#" class="text-light bg-dark">FUN!</a></p>
+        <br>
+    
+        <table class="table table-bordered table-info table-hover border-dark">
+            <tbody class="table-group-divider">
+            <tr>
+               
+                <th class="table-light">Foreign Language</th>
+                <th class="table-light">English Phrase</th>
+                <tbody class="table-group-divider">
+            </tr>
+            {{#each foreignLanguage.phrases}}
+            <tr>
+                <td>{{foreignLanguage}}</td>
+                <td>{{englishPhrase}}</td>
+            </tr>
+            </tbody>
+            </tbody>
+        {{/each}}
+            </table>
+        </section>
+       
+    
+    
+    <section class="studied">
+        <h2><strong><u>Subjects</u></strong></h2>
+        <h4><strong>What I studied and where?</strong></h4>
+        <br>
+        <p><li>BSc. Life and Environmental Sciences (Botany and Chemistry)</li></p>
+        <p><li>BSc. Honours in Chemistry</li></p>
+        <p><li>University of Johannesburg</li></p>
+        <br>
+        <br>
+    </section>
+        
+    <section class="subjects">
+        <h4><strong>Favourite Subjects</strong></h4> <br>
+        
+                {{# each favouriteSubjects}}
+                
+                <div class="row">
+                    <div class="col s4 m4 l4"> <strong>{{name}}</strong></div>
+                    <div class="col s4 m4 l4">{{description}}</div>
+                    <div class="col s12 m6 l4"><img src={{photo}} class="rounded border border-warning" width="200"></div>
+               
+                {{/each}}
+             
+        </div>
+    
+    </section>
+    <br>    
+    
+    </section>
+<br>
+
+<div><a class="btn btn-light btn-lg" href="./index.html" role="button">Home</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+</div>  
+</body>
+</html>
