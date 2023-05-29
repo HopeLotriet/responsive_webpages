@@ -11,8 +11,8 @@ export default defineConfig({
       rollupOptions: {
         input : {
           main: 'index.html',
-          bootstrap: 'index-bootstrap.html',
-          materialize: 'index-materialize.html',
+          sub1: 'index-bootstrap.html',
+          sub2: 'index-materialize.html',
         }
       }
     },
