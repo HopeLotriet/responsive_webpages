@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Webpage</title>
-    <link href="./styles.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
     </head>
 <body>
     <section class="page">
-    <section class="heading"><font size="+4">Personal Webpage</font></section>
+    <section class="heading text-center text-decoration-underline"><font size="+4">Personal Webpage</font></section>
     
     <br>
     <section class="intro"> 
-    <div><h2><strong>{{user.fullName}}</strong></h2> 
-    <img class="user" src="{{user.photo}}" width="350" alt="Musa picture"></div>
+    <div class="name text-center"><h2><strong>{{user.fullName}}</strong></h2> 
+    <img src="{{user.photo}}" class="rounded border border-warning" width="350" alt="Musa picture"></div>
     <br>
 </section>
        
 
-<form class="footer">
+<form class="footer text-center">
     <button class="button" type="submit" formaction="./index-bootstrap.html">Bootstrap</button>
     <button class="button" type="submit" formaction="./index-materialize.html">Materialize</button>
  </form>
