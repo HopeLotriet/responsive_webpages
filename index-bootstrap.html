@@ -8,9 +8,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
+    <style>
+        .container{
+          border: 2px solid black;
+          margin: auto;
+          border-radius: 1em;
+          padding: 10px;
+          text-align: justify;
+        }
+      </style>
+
     <div class="p-3 mb-2 bg-secondary text-white">
         <section class="heading text-center text-decoration-underline"><h1>Personal Webpage</h1></section>
-        
+        <div class="container">
         <section class="intro"> 
         <h1><strong><u>Intro</u></strong></h1>
         <br>
@@ -18,12 +28,12 @@
             <div class="col-sm-5"><h2><strong>{{user.fullName}}</strong></h2></div> 
             <div class="col-sm-7"><img src="{{user.photo}}" class="rounded border border-warning" width="200" alt="Musawenkosi"></div>
     </div>
-        
+</div>
         
         <br>
     </section>
            
-    <section class="city">
+    <div class="container">
         <h1><strong><u>Which City?</u></strong></h1>
     
         <h2><strong>{{city.name}}</strong></h2>
@@ -31,13 +41,11 @@
             <div class="col-sm-4"><img src="{{city.photo}}" class="rounded border border-warning" alt="canal in venice"></div>
             <div class="col-sm-8">{{city.description}}</div>
     </div>
-        
-        <br>
+    <br>
+    </div>
     
-    </section>
-    
-    
-    <section class="language"> 
+    <br>
+    <div class="container"> 
         <h1><strong><u>A Foreign Language</u></strong></h1>
         <h2><strong>{{foreignLanguage.language}}</strong></h2>
         <br>
@@ -61,26 +69,22 @@
             </tbody>
         {{/each}}
             </table>
-        </section>
+    </div>
        
-    
-    
-    <section class="studied">
+    <br>
+    <div class="container">
         <h1><strong><u>Subjects</u></strong></h1>
         <h4><strong>What I studied and where?</strong></h4>
         <br>
         <p><li>BSc. Life and Environmental Sciences (Botany and Chemistry)</li></p>
         <p><li>BSc. Honours in Chemistry</li></p>
         <p><li>University of Johannesburg</li></p>
-        <br>
-        <br>
-    </section>
         
-    <section class="subjects">
+    </div>
+        <br>
+    <div class="container">
         <h4><strong>Favourite Subjects</strong></h4> <br>
         
-               
-                
                 <div class="row">
                     {{# each favouriteSubjects}}
                     <div class="col"> 
@@ -95,10 +99,11 @@
     </section>
     <br>    
     
-    </section>
+    </div>
 <br>
+<div class="container"><a class="btn btn-light btn-lg" href="./index.html" role="button">Home</a></div>
 
-<div><a class="btn btn-light btn-lg" href="./index.html" role="button">Home</a></div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </div>
 </body>

@@ -26,17 +26,17 @@
     "favouriteSubjects" : [
         {
             "name" : "Chemistry",
-            "description" : "Study of the properties and behaviour of matter.",
+            "description" : "Study of the properties, composition, and structure of substances which are defined as elements ans compounds. The transformations they undergo and the energy that is released or absorbed during these processes.",
             "photo" : "./Chemistry.png"
         },
         {
             "name" : "Botany",
-            "description" : "Study of how plants produce food, how they function and what they look like.",
+            "description" : "Branch of biology that studies how plants produce food, how they function and what they look like. This branch also includes plant classification and the study of plant diseases and of interactions with the environment.",
             "photo" : "./Botany.png"
         },
         {
             "name" : "Mathematics",
-            "description" : "Area of knowledge that includes the topics of numbers, formulas and related structures.",
+            "description" : "The science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation.",
             "photo" : "./Maths.png"
         }
     ]

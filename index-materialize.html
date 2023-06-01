@@ -8,37 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+   
     <div class="card-panel grey lighten-1">
         <section class="heading center-align"><h2><u>Personal Webpage</u></h2></section>
         
-        <section class="intro"> 
+       
         <h2><strong><u>Intro</u></strong></h2>
         <br>
         <div class="row">
-            <div class="col s12 m6 l3"><h3><strong>{{user.fullName}}</strong></h3></div> 
-            <div class="col s12 m6 l3"><img src="{{user.photo}}" class="rounded border border-warning" width="200" alt="Musawenkosi"></div>
-    </div>
-        
-        
+            <div class="col s12 m6 center-align"><h3><strong>{{user.fullName}}</strong></h3></div> 
+            <div class="col s12 m6 center-align"><img src="{{user.photo}}" class="rounded border border-warning" width="200" alt="Musawenkosi"></div>
         <br>
-    </section>
-           
-    <section class="city">
+        </div>
+    
+           <br>
+
+    <div class="divider"></div>
+    <div class="section">
         <h2><strong><u>Which City?</u></strong></h2>
         <div><h3><strong>{{city.name}}</strong></h3></div>
        
         <div class="row">
             
-            <div class="col s12 m6 l3"><img src="{{city.photo}}" class="rounded border border-warning" alt="canal in venice"></div>
-            <div class="col s12 m6 l3">{{city.description}}</div>
+            <div class="col s12 m6 center-align"><img src="{{city.photo}}" class="rounded border border-warning" width="300" alt="canal in venice"></div>
+            <div class="col s12 m6">{{city.description}}</div>
     </div>
-        
         <br>
+    </div>
     
-    </section>
-    
-    
-    <section class="language"> 
+    <br>
+    <div class="divider"></div> 
+    <div class="section">
         <h2><strong><u>A Foreign Language</u></strong></h2>
         <h3><strong>{{foreignLanguage.language}}</strong></h3>
         <br>
@@ -62,11 +62,12 @@
             </tbody>
         {{/each}}
             </table>
-        </section>
+    </div>
        
     
-    
-    <section class="studied">
+    <br>
+    <div class="divider"></div>
+    <div class="section">
         <h2><strong><u>Subjects</u></strong></h2>
         <h4><strong>What I studied and where?</strong></h4>
         <br>
@@ -75,9 +76,10 @@
         <p><li>University of Johannesburg</li></p>
         <br>
         <br>
-    </section>
-        
-    <section class="subjects">
+    </div>
+        <br>
+    <div class="divider"></div>
+    <div class="section">
         <h4><strong>Favourite Subjects</strong></h4> <br>
                  <div class="row">
                     {{# each favouriteSubjects}}
@@ -97,11 +99,12 @@
     </section>
     <br>    
     
-    </section>
+    </div>
 <br>
-
-<div><a class="btn btn-light btn-lg" href="./index.html" role="button">Home</a></div>
-
+<div class="divider"></div>
+<div class="section">
+<div class="center-align"><a class="btn btn-light btn-lg" href="./index.html" role="button">Home</a></div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 </div>  
 </body>
